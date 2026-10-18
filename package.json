@@ -1,0 +1,40 @@
+{
+  "name": "@agent-utils/extensions",
+  "version": "0.1.0",
+  "description": "Thin client for the agent_utils Extensions MCP server — exact math, unit conversion and currency conversion for AI agents. One account spans both agent_utils servers.",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "prepack": "npm run build"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "ai-agents",
+    "math",
+    "unit-conversion",
+    "currency-conversion",
+    "claude",
+    "agent-utils"
+  ],
+  "license": "MIT",
+  "homepage": "https://agent-utils.ai",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/agent-utils/agent-utils-extensions-ts.git"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.0"
+  }
+}
