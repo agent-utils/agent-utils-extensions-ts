@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: MIT
 // Thin MCP-over-HTTP client for the hosted agent_utils Extensions server: exact math,
-// unit conversion (general, electrical, chemistry, thermodynamics) and currency.
+// unit conversion (general, electrical, chemistry, thermodynamics).
 // This is a client, not the service - see https://agent-utils.ai.
 // Zero dependencies: uses the global `fetch` (Node 18+).
 
@@ -50,14 +50,6 @@ export class AgentUtilsExtensions {
   }
 
   /** Convert `amount` between ISO 4217 currencies at the latest ECB reference rate. */
-  convertCurrency(fromCurrency: string, toCurrency: string, amount: number) {
-    return this.call("convert_currency", { from: fromCurrency, to: toCurrency, amount });
-  }
-
-  listCurrencies() {
-    return this.call("list_currencies", {});
-  }
-
   // --- account (also on swarm) ---------------------------------------------
 
   getAccount() {
@@ -90,5 +82,9 @@ export class AgentUtilsExtensions {
 
   submitExitFeedback(args: Record<string, unknown> = {}) {
     return this.call("submit_exit_feedback", args);
+  }
+
+  deleteAccount(args: Record<string, unknown> = {}) {
+    return this.call("delete_account", args);
   }
 }

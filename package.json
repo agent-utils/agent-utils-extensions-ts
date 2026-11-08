@@ -1,7 +1,7 @@
 {
   "name": "@agent-utils/extensions",
   "version": "0.1.0",
-  "description": "Thin client for the agent_utils Extensions MCP server — exact math, unit conversion and currency conversion for AI agents. One account spans both agent_utils servers.",
+  "description": "Thin client for the agent_utils Extensions MCP server - exact math and unit conversion for AI agents. One account spans both agent_utils servers.",
   "type": "module",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -21,11 +21,11 @@
     "ai-agents",
     "math",
     "unit-conversion",
-    "currency-conversion",
     "claude",
     "agent-utils"
   ],
   "license": "MIT",
+  "author": "AI Cortex LLC <support@agent-utils.ai>",
   "homepage": "https://agent-utils.ai",
   "repository": {
     "type": "git",
