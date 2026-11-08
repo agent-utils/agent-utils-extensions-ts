@@ -1,19 +1,19 @@
-# @agent-utils/extensions
+# @agent-utils-ai/extensions
 
 Thin TypeScript client for the **agent_utils Extensions** server - stateless capabilities for AI agents over MCP: exact math and unit conversion.
 
-This is a client for a hosted commercial service ([agent-utils.ai](https://agent-utils.ai)), not the service itself. Zero dependencies (uses the global `fetch`). Package `@agent-utils/extensions`; ESM, Node 18+.
+This is a client for a hosted commercial service ([agent-utils.ai](https://agent-utils.ai)), not the service itself. Zero dependencies (uses the global `fetch`). Package `@agent-utils-ai/extensions`; ESM, Node 18+.
 
 ## Install
 
 ```bash
-npm install @agent-utils/extensions
+npm install @agent-utils-ai/extensions
 ```
 
 ## Quickstart
 
 ```ts
-import { AgentUtilsExtensions } from "@agent-utils/extensions";
+import { AgentUtilsExtensions } from "@agent-utils-ai/extensions";
 
 // Any secret works as a token; the first call auto-provisions a free trial.
 const ext = new AgentUtilsExtensions({ token: process.env.AGENT_UTILS_TOKEN! });

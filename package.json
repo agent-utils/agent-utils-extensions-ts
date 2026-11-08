@@ -1,5 +1,5 @@
 {
-  "name": "@agent-utils/extensions",
+  "name": "@agent-utils-ai/extensions",
   "version": "0.1.0",
   "description": "Thin client for the agent_utils Extensions MCP server - exact math and unit conversion for AI agents. One account spans both agent_utils servers.",
   "type": "module",
